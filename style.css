@@ -119,3 +119,17 @@ body {
         font-size: 14px; /* Reduzido o tamanho da fonte */
     }
 }
+
+#shuffle-btn {
+    width: 40%;
+    margin: 0 30%;
+    display: block;
+    width: 50%;
+    height: 60px;
+    border: 2px solid black;
+    font-weight: bold;
+    background: lightgray;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
