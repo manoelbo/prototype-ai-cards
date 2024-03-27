@@ -82,10 +82,40 @@ body {
 }
 
 .card {
-    /* CSS existente permanece igual */
-    display: none; /* Adicionado para ocultar todos os cards inicialmente */
+    display: none;
 }
 
 .card:first-child {
-    display: block; /* Exibe apenas o primeiro card inicialmente */
+    display: block;
+}
+
+/* Media Query para dispositivos com largura máxima de 800px */
+@media screen and (max-width: 800px) {
+
+    .container {
+        width: 100%;
+    }
+    .card {
+        width: 100%; /* Alterado para ocupar toda a largura disponível */
+        max-width: 600px; /* Definido um tamanho máximo para o card */
+        margin: 20px auto; /* Centraliza os cards na tela */
+        height: 600px;/* Alterado para se ajustar ao conteúdo */
+    }
+
+    .card-front {
+        font-size: 12px; /* Reduzido o tamanho da fonte */
+    }
+
+    .card-back h2 {
+        font-size: 16px; /* Reduzido o tamanho da fonte */
+    }
+
+    .card-back p {
+        font-size: 16px; /* Reduzido o tamanho da fonte */
+        margin: 15px 0; /* Reduzido o espaçamento vertical */
+    }
+
+    .card-back ul li {
+        font-size: 14px; /* Reduzido o tamanho da fonte */
+    }
 }
